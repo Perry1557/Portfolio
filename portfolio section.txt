@@ -1,0 +1,276 @@
+<div class="contain">
+                <div class="card">
+                    <div class="imbx">
+                        <img src="./assert/coffee.jpeg" alt="coffee">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>Coffee Website <br><span>Best Coffee Served Hot</span></h2>
+
+                            <div class="data">
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque ea dolores.</h3>
+                            </div>
+
+                            <div class="action-btn">
+                                <a href="https://mellow-twilight-62e290.netlify.app/">View Landscape</a>
+
+                                <a href="https://github.com/Perry1557/coffee-website">View On GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imbx">
+                        <img src="./assert/e ccom.png" alt="coffee">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>Lilly's Food <br><span>Home Of Best African Food</span></h2>
+
+                            <div class="data">
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque ea dolores.</h3>
+                            </div>
+
+                            <div class="action-btn">
+                                <a href="https://bucolic-bubblegum-66a09a.netlify.app/">View Landscape</a>
+
+                                <a href="https://github.com/Perry1557/Lily-s-home-of-Africa-food-stuff--main">View On GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imbx">
+                        <img src="./assert/movie.jpg" alt="coffee">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>FilmHouse<br><span>Home For Best MOvies</span></h2>
+
+                            <div class="data">
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque ea dolores.</h3>
+                            </div>
+
+                            <div class="action-btn">
+                                <a href="https://magnificent-eclair-45f12d.netlify.app/">View Landscape</a>
+
+                                <a href="https://github.com/Perry1557/Second-movie-project">View On GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imbx">
+                        <img src="./assert/clock.jpg" alt="coffee">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>Real World Clock<br><span>With Dark and White Mode</span></h2>
+
+                            <div class="data">
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque ea dolores.</h3>
+                            </div>
+
+                            <div class="action-btn">
+                                <a href="https://sweet-medovik-448622.netlify.app/">View Landscape</a>
+
+                                <a href="https://github.com/Perry1557/100-days-od-code-with-javascript">View On GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imbx">
+                        <img src="./assert/transport.webp" alt="coffee">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>Transporto <br><span>Best Shipping Company</span></h2>
+
+                            <div class="data">
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque ea dolores.</h3>
+                            </div>
+
+                            <div class="action-btn">
+                                <a href="https://lovely-ganache-7173ea.netlify.app/">View Landscape</a>
+
+                                <a href="https://github.com/Perry1557/Pro-work">View On GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imbx">
+                        <img src="./assert/home-img-2.png" alt="coffee">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>Kitch-In <br><span> Where every flavor tells a story.</span></h2>
+
+                            <div class="data">
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque ea dolores.</h3>
+                            </div>
+
+                            <div class="action-btn">
+                                <a href="https://clever-lily-211bc3.netlify.app/">View Landscape</a>
+
+                                <a href="https://github.com/Perry1557/food-website">View On GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+css 
+
+.contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  /* gap: 20px; */
+}
+
+.card-container {
+  padding-block: 5rem;
+}
+
+.card-content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+}
+.card{
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: var(--light-blue);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgb(0,0,0,0.15);
+  transition: 0.5s;
+}
+
+.card:hover{
+  height:450px ;
+}
+
+.imbx{
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: var(--light-blue);
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .imbx{
+  width: 250px;
+  height: 250px;
+}
+
+.imbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+
+.card .content .details{
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
+.card .content .details h2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card .content .details .data h3 {
+  font-size: 1em;
+  color: var(--dark);
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.card .content .details  .action-btn{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card .content .details  .action-btn a{
+  padding:  10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: var(--dark);
+  color: var(--light-blue);
+}
+
+
+.card .content .details  .action-btn a:nth-child(2){
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  background: var(--light-blue);
+}
+
+
+<!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+ </div>
+                        ...
+                        </div>
+
+
+<h4>HTML = 95%</h4>
+                            <h4>CSS =   60%</h4>
+                            <h4>JavaScript = 48% </h4>
+                            <h4>Tailwind-css = 85%</h4>
+                            <h4>React Js = 30%</h4>
+                            <h4>WordPress = 60%</h4>
+                            <h4>Angular = 0%</h4>
+                            <h4>Vue = 0%</h4>
+                            <h4>Bootstrap = 85%</h4>
