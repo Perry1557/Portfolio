@@ -1,15 +1,27 @@
-'use strict'
+'use strict';
 
 
 
+//================= header navigation==================
+ //effect on scroll
+window.addEventListener("scroll", function(){
+    let header = this.document.querySelector(".head");
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
 
+//responsive side navbar
 
+let menu = document.querySelector(".menu");
+let menuBtn = document.querySelector(".menu-btn");
+let closeBtn = document.querySelector('.close-btn');
 
+menuBtn.addEventListener('click', () => {
+    menu.classList.add('active');
+});
 
-
-
-
-
+closeBtn.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
 
 
 
@@ -21,52 +33,26 @@ const text = document.querySelector('.sec-text');
 
 const textLoad = () => {
     setTimeout(() => {
-        text.textContent = "Web Developer";
+        text.textContent = "Frontend Developer";
     }, 0 );
     setTimeout(() => {
-        text.textContent = "Frontend Developer";
-    }, 4000 );
-    setTimeout(() => {
         text.textContent = "Coming Soon";
+    }, 4000 );
+
+    setTimeout(() => {
+        text.textContent = "Wordpress Developer";
     }, 8000 );
     
     setTimeout(() => {
-        text.textContent = " Freelancer";
+        text.textContent = "Freelancer";
     }, 12000 );
 }
 
 textLoad();
-setInterval(textLoad, 16000);
+setInterval(textLoad, 17000);
 
 
 
-//=================== portfolio swiper =====================
-
-// let swiperCards = new Swiper(".card__content", {
-//   loop: true,
-//   spaceBetween: 32,
-//   grabCursor: true,
-
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//     dynamicBullets: true,
-//   },
-
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   breakpoints:{
-//     600: {
-//       slidesPerView: 2,
-//     },
-//     968: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
 
 
 
