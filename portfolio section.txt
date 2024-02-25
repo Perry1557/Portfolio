@@ -274,3 +274,69 @@ css
                             <h4>Angular = 0%</h4>
                             <h4>Vue = 0%</h4>
                             <h4>Bootstrap = 85%</h4>
+
+
+                            media codes
+
+                            .head .btn{
+        display: block;
+    }
+
+    .head .menu{
+        position: fixed;
+        background: var(--dark-blue);
+        flex-direction: column;
+        min-width: 300px;
+        height: 60vh;
+        top: 0;
+        right: -100%;
+        padding: 20px ;
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+
+    .head .menu.active{
+        right: 0;
+    }
+
+    .head .menu.close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 25px;
+    }
+
+    .head .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 10px;
+        padding: 0 15px;
+    }
+<i class="fas fa-times close-btn"></i>
+<i class="fas fa-bars menu-btn"></i>
+
+
+
+<header>
+        <div class="head">
+            <a href="./index.html" class="logo">Perry</a>
+
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+
+            <a href="./index.html">Home</a>
+            <a href="#About">About</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </div>
+      
+ </header>

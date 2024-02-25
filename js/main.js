@@ -1,28 +1,31 @@
 'use strict';
 
 
+        // navbar responsiveness
+// const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menu = document.querySelector(".menu-list");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
 
-//================= header navigation==================
- //effect on scroll
-window.addEventListener("scroll", function(){
-    let header = this.document.querySelector(".head");
-    header.classList.toggle('sticky', window.scrollY > 0);
-});
+menuBtn.onclick = () => {
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+    // body.classList.add("disabledscroll");
+}
 
-//responsive side navbar
+cancelBtn.onclick = () => {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    // body.classList.remove("disabledscroll");
+}
 
-let menu = document.querySelector(".menu");
-let menuBtn = document.querySelector(".menu-btn");
-let closeBtn = document.querySelector('.close-btn');
+        // sticky navbar
 
-menuBtn.addEventListener('click', () => {
-    menu.classList.add('active');
-});
-
-closeBtn.addEventListener('click', () => {
-    menu.classList.remove('active');
-});
-
+window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
+    
 
 
 
