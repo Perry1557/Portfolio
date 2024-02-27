@@ -1752,6 +1752,7 @@ textarea::-webkit-scrollbar-thumb{
       height: 40vh;
       border-radius: 5px;
       perspective: 800px;
+      overflow: hidden;
     }
     .cad .back h4{
       font-size: 3rem;
