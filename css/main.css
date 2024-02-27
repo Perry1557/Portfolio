@@ -903,9 +903,9 @@ textarea::-webkit-scrollbar-thumb{
       display: none;
     }
 
-    /* body.disabledscroll{
+    body.disabledscroll{
       overflow: hidden;
-    } */
+    }
 
  
 
